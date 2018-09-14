@@ -1,12 +1,12 @@
 <?php
 
+namespace App\Controllers;
+
 class PagesController {
     public function home() {
         // Receive the request.
         // Delegate.
         // return a response.
-
-        $users = App::get('database')->selectAll('users');
 
         return view('index');
     }
